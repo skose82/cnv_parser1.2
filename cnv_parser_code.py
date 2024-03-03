@@ -8,7 +8,7 @@ import os
 import pandas as pd
 import glob
 
-path = r'/Users/adminskose/Desktop/CNV_COHORT/Intersected/200'
+path = r'/path/'
 
 all_files = glob.glob(os.path.join(path , "*.bed"))
 list = []
