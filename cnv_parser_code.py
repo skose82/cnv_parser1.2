@@ -21,6 +21,6 @@ concat_df = pd.concat(list, axis=0, ignore_index=True)
 # If you want to check index positions / 0 is row and , next is column. 
 print(str(concat_df.iloc[0, 16]) + " " + str(concat_df.iloc[0, 4],) + " " + str(concat_df.iloc[0,15]) + " " + str(concat_df.iloc[0,9]))
 
-DIS3L2_df = concat_df[concat_df.eq("DIS3L2").any(1)]
+gene_df = concat_df[concat_df.eq("gene").any(1)]
 
-DIS3L2_df.to_csv('200_DIS3L2_w_sanity_cnv_parser_check.csv', index=False)
+gene_df.to_csv('200_gene.csv', index=False)
